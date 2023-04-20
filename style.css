@@ -1,0 +1,17 @@
+.azul{
+    background-color: blue;
+    color: white;
+}
+.rosado{
+    background-color: pink;
+    color: black;
+}
+.bg-gray{
+    background-color: rgba(129, 129, 129, 0.466);
+}
+.titulo{
+    height: 120px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50px;
+}
