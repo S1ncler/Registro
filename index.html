@@ -10,7 +10,6 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Empleo</title>
   </head>
@@ -27,41 +26,52 @@
         <div
           class="col-12 w-100 d-flex align-content-center justify-content-center"
         >
-          <form id="registro">
+          <form id="registro" data-form>
             <div
               class="mb-3 d-flex align-content-center justify-content-center"
             >
               <input
+                name="nombre"
                 type="text"
                 placeholder="Nombre y apellido"
                 id="nombre"
                 class="form-control"
+                data-field-nombres
               />
             </div>
             <div
               class="mb-3 d-flex align-content-center justify-content-center"
             >
               <input
+                name="aspiracion"
                 type="number"
                 placeholder="Aspiracion salarial"
                 id="aspiracion"
                 class="form-control"
+                data-field-aspiracion
               />
             </div>
             <div
               class="mb-3 d-flex align-content-center justify-content-center"
             >
               <input
+                name="email"
                 type="email"
                 placeholder="Correo electronico"
                 id="email"
                 class="form-control"
+                data-field-email
               />
             </div>
             <div
               class="mb-3 d-flex align-content-center justify-content-center"
             >
-              <select name="" id="genero" class="form-control">
+              <select
+                name="genero"
+                id="genero"
+                class="form-control"
+                data-field-genero
+              >
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
               </select>
@@ -69,7 +79,12 @@
             <div
               class="mb-3 d-flex align-content-center justify-content-center"
             >
-              <select name="" id="cargo" class="form-control">
+              <select
+                name="cargo"
+                id="cargo"
+                class="form-control"
+                data-field-cargo
+              >
                 <option value="desarrollador">Desarrollador</option>
                 <option value="gerente">Gerente de proyecto</option>
                 <option value="lider">Lider administrativo</option>
@@ -77,20 +92,22 @@
                 <option value="otro">Otro</option>
               </select>
               <input
+                name="cargo"
                 type="text"
                 placeholder="Escriba cual"
                 id="inputOtro"
+                data-field-inpotro
                 hidden
               />
             </div>
             <div
               class="mb-3 d-flex align-content-center justify-content-center"
             >
-              <button class="btn azul" id="boton" onclick="registrar()">
+              <button class="btn azul" id="boton" type="submit" data-submit>
                 Resgistrarse
               </button>
-            </div>            
-          </form>          
+            </div>
+          </form>
         </div>
       </div>
     </div>
